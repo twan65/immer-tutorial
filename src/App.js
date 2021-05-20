@@ -14,7 +14,7 @@ const App = () => {
     (e) => {
       const { name, value } = e.target;
       setForm(
-        produce(form, (draft) => {
+        produce((draft) => {
           draft[name] = value;
         })
       );
